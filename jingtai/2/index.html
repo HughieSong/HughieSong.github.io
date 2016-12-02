@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实训2</title>
+    <link rel="stylesheet" href="clear.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .title {
+            height: 35px;
+            background-color: #f3bc23;
+        }
+
+        .title_box {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .title_l, .title_r {
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 35px;
+            margin: auto 4px;
+        }
+
+        .cart {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url("img/icon.png") 0 0;
+            margin-left: 10px;
+        }
+
+        .title_l {
+            float: left;
+        }
+
+        .title_r {
+            float: right;
+        }
+
+        .logo_box {
+            background-color: #1c1d24;
+        }
+
+        .logo_box_2 {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .search_top {
+            width: 208px;
+            height: 28px;
+            background-color: #2f313d;
+            border: none;
+            padding: 0;
+            border-bottom: 1px solid #000000;
+            border-right: 1px solid #000000;
+            font-style: italic;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 21px;
+            margin-right: 0;
+        }
+
+        .search_top_ico {
+            width: 14px;
+            height: 14px;
+            background: url("img/icon.png") 0 -96px;
+            position: relative;
+            top: 28px;
+            right: -200px;
+        }
+
+        .search_top, .search_top_ico {
+            display: inline-block;
+            float: right;
+        }
+
+        .logo_menu {
+            width: 1280px;
+            height: 47px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 192px;
+            height: 23px;
+            background: url("img/icon.png") 0 -63px;
+            margin-top: 7px;
+        }
+
+        i + ul {
+            display: inline-block;
+            float: right;
+        }
+
+        ul > li {
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 7px 0 0 33px;
+        }
+
+        li a {
+            color: #f1f6f8;
+        }
+
+        .bg_img {
+            height: 635px;
+            background: url("img/bg.png") no-repeat 0 -130px;
+            margin: 0 auto;
+        }
+
+        .bg_img_char {
+            display: block;
+            width: 458px;
+            height: 246px;
+            background: url("img/icon.png") 0 -108px;
+            position: relative;
+            left: 900px;
+            bottom: -270px;
+        }
+
+        .control_circle_box > a {
+            display: block;
+            float: left;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #1c1d24;
+            margin: 32px 9px;
+        }
+
+        .control_circle_box > a:hover {
+            background-color: #f3bc23;
+        }
+
+        .control_circle_box {
+            width: 220px;
+            height: 77px;
+            margin: 0 auto;
+        }
+
+        .new_title {
+            height: 153px;
+        }
+
+        .new_title i {
+            display: block;
+            width: 453px;
+            height: 39px;
+            background: url("img/icon.png") 0 -354px;
+            margin: 57px auto;
+        }
+
+        .new_img_box {
+            width: 1280px;
+            margin: 0px auto;
+        }
+
+        .new_img_content {
+            height: 343px;
+            margin-left: 28px;
+            display: inline-block;
+        }
+
+        .new_img {
+            display: block;
+            width: 388px;
+            height: 213px;
+        }
+
+        .new_img_content_1 {
+            background: url("img/Layer1.png") no-repeat;
+        }
+
+        .new_img_content_2 {
+            background: url("img/Layer2.png") no-repeat;
+        }
+
+        .new_img_content_3 {
+            background: url("img/Layer3.png") no-repeat;
+        }
+
+        .new_img + i {
+            text-align: center;
+            font-weight: bold;
+            color: #1c1d24;
+        }
+
+        i p {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .line {
+            width: 1090px;
+            height: 1px;
+            background-color: #c3c4c5;
+            margin: 0px auto;
+        }
+
+        .tren_title {
+            height: 151px;
+        }
+
+        .tren_title i {
+            display: block;
+            width: 651px;
+            height: 39px;
+            background: url("img/icon.png") 0 -401px;
+            margin: 55px auto;
+        }
+
+        .tren_box {
+            height: 1107px;
+        }
+
+        .tren_content_1 {
+            width: 799px;
+            height: 141px;
+            background-color: #fff;
+            border-width: 1px 1px 2px 1px;
+            border-style: solid solid solid solid;
+            border-color: #d4d8d9;
+            margin: 0 auto;
+        }
+
+        .tren_content_1 a {
+            display: block;
+            width: 31px;
+            height: 27px;
+            background: url("img/icon.png") 0 -23px;
+            position: relative;
+            left: 750px;
+            top: 18px;
+        }
+
+        .orange_char {
+            display: block;
+            font-size: 14px;
+            line-height: 28px;
+            color: #e4b123;
+            margin-left: 59px;
+        }
+
+        .black_char {
+            display: block;
+            width: 630px;
+            font-size: 14px;
+            line-height: 28px;
+            color: #1c1d24;
+            margin-left: 59px;
+        }
+
+        .tren_content_2 {
+            width: 799px;
+            height: 580px;
+            background-color: #fff;
+            border-width: 1px 1px 2px 1px;
+            border-style: solid solid solid solid;
+            border-color: #d4d8d9;
+            margin: 49px auto;
+        }
+
+        .tren_content_2 a {
+            display: block;
+            width: 33px;
+            height: 29px;
+            background: url("img/icon.png") -39px -24px;
+            position: relative;
+            left: 750px;
+            top: 18px;
+        }
+
+        .orange_char {
+            display: block;
+            font-size: 14px;
+            line-height: 28px;
+            color: #e4b123;
+            margin-left: 59px;
+        }
+
+        .tren_img {
+            width: 420px;
+            height: 420px;
+            background: url("img/Layer4.png");
+            margin-left: 59px;
+            margin-top: 43px;
+            border: 1px solid #fff;
+        }
+
+        .black_char_2 {
+            width: 251px;
+            font-size: 14px;
+            line-height: 28px;
+            color: #1c1d24;
+            margin-left: 59px;
+            margin-top: 184px;
+        }
+
+        .tren_block {
+            display: inline-block;
+            float: left;
+        }
+
+        .tren_content_3 {
+            width: 799px;
+            height: 141px;
+            background-color: #fff;
+            border-width: 1px 1px 2px 1px;
+            border-style: solid solid solid solid;
+            border-color: #d4d8d9;
+            margin: 0 auto;
+        }
+
+        .tren_content_3 a {
+            display: block;
+            width: 31px;
+            height: 27px;
+            background: url("img/icon.png") -65px -23px;
+            position: relative;
+            left: 750px;
+            top: 18px;
+        }
+
+        .bottom_box {
+            height: 114px;
+            background-color: #1c1d24;
+        }
+
+        .bottom_box_2 {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .search_bottom {
+            width: 279px;
+            height: 28px;
+            background-color: #2f313d;
+            border: none;
+            padding: 0;
+            border-bottom: 1px solid #000000;
+            border-right: 1px solid #000000;
+            font-style: italic;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 29px;
+        }
+
+        .search_bottom_ico {
+            width: 20px;
+            height: 18px;
+            background: url("img/icon.png") -45px 0;
+            position: relative;
+            top: 36px;
+            right: -270px;
+        }
+
+        .search_bottom, .search_bottom_ico {
+            display: inline-block;
+            float: right;
+        }
+
+        .bottom_menu {
+            width: 1280px;
+            height: 47px;
+            margin: 0 auto;
+        }
+
+        .bottom {
+            display: inline-block;
+            width: 53px;
+            height: 53px;
+            background: url("img/icon.png") -96px 0;
+            margin-top: -40px;
+            margin-left: 54px;
+        }
+
+        .bottom_logo {
+            float: left;
+            width: 146px;
+        }
+
+        .sub {
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url("img/icon.png") -71px 0;
+            margin-top: 29px;
+
+        }
+
+        .sub + i {
+            width: 146px;
+            color: #f8f8f8;
+            font-size: 10px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: -22px;
+        }
+
+        .sub, .sub + i {
+            display: inline-block;
+            float: left;
+        }
+
+        .bottom_menu ul {
+            width: 821px;
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="title ">
+    <div class="title_box f-clear">
+        <div class="title_l">FREE SHIPPING ON ORDERS OVER $50 USD</div>
+        <div class="title_r"><a href="###">SIGN IN </a><a href="###"><i class="cart"></i></a></div>
+    </div>
+</div>
+<div class="logo_box">
+    <div class="logo_box_2 f-clear">
+        <input class="search_top" type="text" placeholder="　SEARCH WEBSITE"><a class="search_top_ico" href="###"></a>
+    </div>
+    <div class="logo_menu">
+        <i class="logo"></i>
+        <ul>
+            <li><a href="###">SPORTS</a></li>
+            <li><a href="###">APPAREL</a></li>
+            <li><a href="###">GEAR</a></li>
+            <li><a href="###">VIDEOS</a></li>
+            <li><a href="###">TEAMS</a></li>
+            <li><a href="###">DEMO HOUSES/DEALERS</a></li>
+            <li><a href="###">CUSTOMER SERVICE</a></li>
+        </ul>
+    </div>
+</div>
+<div class="bg_img">
+    <i class="bg_img_char"></i>
+</div>
+<div class="control_circle">
+    <div class="control_circle_box">
+        <a href="###"></a>
+        <a href="###"></a>
+        <a href="###"></a>
+        <a href="###"></a>
+        <a href="###"></a>
+        <a href="###"></a>
+        <a href="###"></a>
+    </div>
+</div>
+<div class="new_title"><i></i></div>
+<div class="new_img_box f-clear">
+    <div class="new_img_content new_img_content_1">
+        <i class="new_img"></i><i><p>2015 FASTPITCH CF 7 LINEUP RELEASED</p></i>
+    </div>
+    <div class="new_img_content new_img_content_2">
+        <i class="new_img"></i><i><p>2015 FASTPITCH CF 7 LINEUP RELEASED</p></i>
+    </div>
+    <div class="new_img_content new_img_content_3">
+        <i class="new_img"></i><i><p>2015 FASTPITCH CF 7 LINEUP RELEASED</p></i>
+    </div>
+</div>
+<div class="line_box">
+    <div class="line"></div>
+</div>
+<div class="tren_title"><i></i></div>
+<div class="tren_box">
+    <div class="tren_content_1">
+        <a href="###"></a>
+        <i class="orange_char">about a day ago we replied to</i>
+        <i class="black_char">@danielcook1996 Hi Daniel,we are sorry that we can't get something out to you sooner.If
+            you have any questions regarding...</i>
+    </div>
+    <div class="tren_content_2">
+        <a href="###"></a>
+
+        <i class="orange_char">about a day ago we posted a picture</i>
+        <i class="tren_img tren_block"></i>
+        <i class="black_char_2 tren_block">@DeMarini22 Chris Larsen with the #CL22. #SlowpitchSunday @DemariniSP
+            #beast</i>
+    </div>
+    <div class="tren_content_3">
+        <a href="###"></a>
+        <i class="orange_char">about a day ago we posted on our wall</i>
+        <i class="black_char">We've added another flipper to the family ! 12"with an endload coming July 4th.Contact
+            your lacal DGA to get yours.</i>
+    </div>
+</div>
+<div class="bottom_box">
+    <div class="bottom_box_2 f-clear">
+        <input class="search_bottom" type="text" placeholder="　SIGN UP FOR UOR NEWSLETTER"><a class="search_bottom_ico"
+                                                                                              href="###"></a>
+    </div>
+    <div class="bottom_menu">
+        <div class="bottom_logo">
+            <i class="bottom"></i><i class="sub"></i><i>　2013 DeMarini Sports Inc.</i></div>
+        <ul>
+            <li><a href="###">ABOUT</a></li>
+            <li><a href="###">CUSTOMER SERVICE</a></li>
+            <li><a href="###">CONTACT</a></li>
+            <li><a href="###">CATELOG</a></li>
+            <li><a href="###">EMAIL SIGNUP</a></li>
+            <li><a href="###">PRIVACY POLICY</a></li>
+            <li><a href="###">CALIFORNIA LEGAL</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

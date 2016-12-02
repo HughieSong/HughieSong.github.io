@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.demo-nav {
+    background: #3a3e64;
+    padding: 15px 170px;
+}
+.collapsed,.navbar-toggle{
+    background: #e84545;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-toggle:hover,.navbar-toggle:focus{
+    background: #e84545 !important;
+}
+.icon-bar{
+    background-color:#fff!important;
+    width: 18px!important;
+    height: 3px!important;
+    margin: 3px auto!important;
+}
+.nav_ul{
+    text-align: center;
+    float: right;
+}
+.nav_ul a{
+    color: rgba(255, 255, 255, 0.75) !important;
+    font: normal 1.4rem "微软雅黑";
+}
+.carousel-indicators li{
+    border: 1px solid #3a3e64;
+}
+.carousel-indicators .active{
+    background-color:  #3a3e64;
+}
+.carousel-caption h1{
+    font-size: 45px;
+    font-family: 'Lantinghei SC', 'Open Sans', 'Arial', 'Hiragino Sans GB', 'Microsoft YaHei', "微软雅黑", "STHeiti", 'WenQuanYi Micro Hei', 'SimSun', 'Helvetica', 'sans-serif';
+    font-weight: 700;
+    color: #3a3e64;
+}
+.carousel-caption{
+    margin-bottom: 110px;
+}
+.carousel-caption span{
+    font-size: 20px;
+    color: #3a3e64;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 100px auto;
+}
+.thumbnail{
+    border: none;
+}
+.thumbnail .glyphicon{
+    font-size: 70px;
+    color: #e84545;
+}
+.thumbnail .caption h5{
+    font-weight: 700;
+    color: #2d3033;
+}
+.thumbnail .caption p{
+    color: #6c7279;
+    line-height: 1.5;
+}
+
+.container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.container-fluid .item{
+    max-height: 350px;
+    position: relative;
+    /*left:-15px;*/
+    overflow: hidden;
+}
+img {
+    transition: all .5s linear;
+}
+.container-fluid .item:hover img{
+    transform: scale(1.2);
+}
+.container-fluid .item:hover .order{
+    opacity: 0.8;
+}
+.container-fluid .row{
+    position: relative;
+}
+.container-fluid .order{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s linear;
+}
+.container-fluid .item .order h3{
+    transform: translateY(-10px);
+    transition: all .3s linear;
+    margin-left: 8%;
+}
+.container-fluid .item .order p{
+    transform: translateY(230px);
+    transition: all .3s linear;
+    display: inline-block;
+    width: 80%;
+    margin-left: 8%;
+
+}
+.container-fluid .item:hover h3{
+    transform: translateY(50px);
+}
+.container-fluid .item:hover p{
+    transform: translateY(60px);
+}
+.item{
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.row .item:nth-child(3){
+    margin-right: 0;
+}

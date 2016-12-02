@@ -1,0 +1,68 @@
+﻿body {
+    
+    line-height: 1.666;
+    color: #fff;
+}
+
+body, input {
+    font-family:华文细黑;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd, table, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table, th, td, img {
+    border: 0
+}
+
+em, i, th ,s{
+    font-style: normal;
+    text-decoration: none
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-size: 100%;
+    font-weight: normal
+}
+
+input, select, button, textarea, table {
+
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%
+}
+
+input {
+    outline: none;
+}
+
+ul, ol,li {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+th, caption {
+    text-align: left
+}
+
+a ,u{
+    color: #666;
+    text-decoration: none;
+}
+
+/*清除浮动*/
+.f-clear:before, .f-clear:after {
+    clear: both;
+    content: "";
+    font-size: 0;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}

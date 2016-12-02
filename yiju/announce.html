@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>易居-发布房源</title>
+    <link rel="stylesheet" href="css/c.css" type="text/css">
+    <link rel="stylesheet" href="css/announce.css" type="text/css">
+</head>
+<body>
+
+<div id="top">
+    <div id="top_content">
+        <a href="###" id="logo"></a>
+        <div id="search_box"><i id="address_box"><span id="address">郑州</span><a id="inner_tri"></a></i><input
+                id="search_input"
+                type="text" placeholder="请输入小区名称/区域/厅室">
+        </div><button id="search_btn"><i id="search_icon"></i><span id="search_house">搜房源</span></button>
+        <i id="reg"><a href="###" class="register">我是昵称</a>|<a href="###" class="register">注册</a></i>
+        <div id="pop">
+            <br>
+            <div id="pop_list">
+                <i class="pop_list_city">北京</i>
+                <i class="pop_list_city">上海</i>
+                <i class="pop_list_city">广州</i>
+                <i class="pop_list_city">深圳</i>
+                <i class="pop_list_city">郑州</i>
+                <i class="pop_list_city">杭州</i>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="">
+<div id="main_box">
+<div id="main_content_box">
+<h1>免费发布房源</h1>
+    <h2>类别和身份</h2>
+    <ul class="kind kind_r">
+        <li>　<span>* </span>出租方式： </li>
+        <li>　<i class="circle_border"><s class="circle_inner circle_inner_check"></s></i>整套出租</li>
+        <li>　<i class="circle_border"><s class="circle_inner"></s></i>单间出租</li>
+        <li>　<i class="circle_border"><s class="circle_inner"></s></i>床位出租</li>
+    </ul>
+    <br>
+    <ul class="kind kind_i">
+        <li>　　　<span>* </span>身份： </li>
+        <li>　<i class="circle_border"><s class="circle_inner"></s></i>个人</li>
+        <li>　<i class="circle_border"><s class="circle_inner"></s></i>经纪人</li>
+    </ul>
+    <h2>基础信息</h2>
+    <span class="intro star">　*</span> <p class="intro">小区名称：　</p><i id="name_box"><input class="input_name" type="text" name="villageName" placeholder="请输入小区名称"></i>
+    <br>
+    <span class="intro star">　*</span> <p class="intro">房屋户型：　</p><i class="house_kind"><input class="house_kind_input" type="text" name="shi"><b class="unit">室</b></i><i class="house_kind"><input
+        class="house_kind_input" type="text" name="ting"><b class="unit">厅</b></i><i class="house_kind"><input class="house_kind_input" type="text" name="wei"><b class="unit">卫</b></i><i class="house_kind"><input class="house_kind_input" type="text" name="area"><b class="unit">㎡</b></i>
+    <br>
+    <span class="intro star">　　　*</span> <p class="intro">楼层：　</p><i class="house_kind"><b class="start unit">第</b><input
+        class="floor_num" type="text" name="floor"><b class="unit">层</b></i><i class="house_kind"><b class="start unit">共</b><input class="floor_num" type="text" name="countfloor"><b class="unit">层</b></i>
+    <br>
+    <span class="intro star">　*</span> <p class="intro">朝向装修：　</p><i id="direction_box"><s class="direction_south dir_opt">南</s><b id="direction_tri"></b></i><i id="fit_box"><s class="direction_south dir_fit">精装修</s><b id="fit_tri"></b></i>
+    <br>
+    <span class="intro star">　　　*</span> <p class="intro">租金：　</p><i class="rent_fee"><s class="rent_intro">面议</s><input
+        type="text"  name="price" id="fee_input"><b class="unit">元/月</b></i><i class="rent_fee" id="fee_box"><s class="rent_intro rent_kind">押一付三</s><b id="fee_tri"></b></i>
+    <h2>详细信息</h2>
+    <span class="intro star">　　　*</span> <p class="intro">标题：　</p><i class="ipt_box" id="title_box"><input class="input_name" type="text" name="tittle" placeholder="8至30个字，不允许特殊字符"></i>
+    <br>
+    <span class="intro star">　*</span> <p class="intro">房屋配置：　</p>
+    <ul id="config">
+        <li class="config_opt"><i class="con_opt_text">床</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">衣柜</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">沙发</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">书桌</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">电视</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">冰箱</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">微波炉</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">电磁炉</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">洗衣机</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">空调</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">热水器</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">宽带</i><b></b></li>
+        <li class="config_opt"><i class="con_opt_text">暖气</i><b></b></li>
+    </ul>
+    <br>
+    <div id="special_dv">
+    <span class="intro star">　　　*</span> <p class="intro">特色：　</p><i class="ipt_box" id="special_box"><input class="input_name" type="text" name="features" placeholder="请输入4字关键词，不同关键词中间用空格隔开"></i>
+    <br>
+    <span class="intro star">　　　*</span> <p class="intro">地址：　</p><i class="ipt_box" id="add_box"><input class="input_name" type="text" name="address" placeholder="请正确输入地址"></i>
+    </div>
+    <br>
+    <button id="uploading">上传图片</button>
+    <input type="file" id="uploadPhoto" name="uploadPhoto">
+    <br>
+    <i id="photo_box"><img src="" alt=""></i>
+    <br>
+    <i id="under_intro">只能上传房屋图片，不能包含有文字、数字、网址、名片等，最多上传24张，每张最大10M</i>
+    <h2>其它信息</h2>
+        <span class="intro star">　　*</span> <p class="intro">联系人：　</p><i id="linkman"><input class="input_name  link" type="text" name="linkman" placeholder="请填写联系人"></i>
+        <br>
+        <span class="intro star">　*</span> <p class="intro">联系电话：　</p><i id="call"><input class="input_name link"  type="text" name="linkphone" placeholder="请正确填写号码"></i>
+    <br>
+    <input id="publish" value="发布" type="button">
+
+    <ul class="dire_dv" id="dire_dv_l">
+        <li class="dire_check">南</li>
+        <li>东</li>
+        <li>北</li>
+        <li>西</li>
+
+    </ul>
+    <ul class="dire_dv" id="dire_dv_r">
+        <li class="dire_check">精装修</li>
+        <li>中等装修</li>
+        <li>简装</li>
+        <li>毛坯</li>
+    </ul>
+    <ul class="dire_dv" id="fee_dv">
+        <li class="dire_check">押一付三</li>
+        <li>押一付一</li>
+        <li>半年付</li>
+        <li>一年付</li>
+        <li>押一付二</li>
+        <li>押二付二</li>
+    </ul>
+
+</div>
+</div>
+<div id="end_content">
+    <div id="end_content_box">
+        <ul id="end_link1">
+            <li class="end_link1_li end_link1_title">友情连接 :</li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">武汉租房</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">厨房电器品牌</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">房展汇</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">36搜房网</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">无锡二手车</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">合肥房产网</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">房产论坛</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">租房问答</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">郑州租房</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">郑州房价</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">好租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">郑州租房</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">密封胶</a></li>
+        </ul>
+        <br>
+        <ul id="end_link2">
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">南山写字楼</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">罗湖写字楼</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">上海写字楼出租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">广州写字楼出租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">北京办公室出租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">深圳写字楼出租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">房产季</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">好租</a></li>
+            <li class="end_link1_li"><a class="end_link1_li_a" href="###">好租</a></li>
+        </ul>
+        <br>
+        <i id="split"></i>
+        <i id="qrCode"><s id="qrCodeIntro">微信扫一扫 马上租房</s></i>
+        <br>
+        <i id="permission">北京易居房产经纪有限公司 | 网络经营许可证 京ICP备1102461号-12</i>
+        <br>
+        <i id="copy">© Copyright©2010-2016 易居yiju.com版权所有</i>
+    </div>
+</div>
+    <div class="reg_pop_dv">
+    <div id="reg_pop">
+        <i class="off"></i>
+        <br>
+        <s class="finish"></s>
+        <b class="alert_intro">房源发布成功</b>
+        <br>
+        <a href="###" class="continue con_l">返回</a>
+        <a href="###" class="continue con_r">继续发布>></a>
+    </div>
+    </div>
+</form>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/announce.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload1.js"></script>
+</body>
+</html>

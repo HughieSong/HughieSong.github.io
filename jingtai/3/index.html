@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实训3</title>
+    <link rel="stylesheet" href="css/clear.css">
+    <style>
+        .top {
+            height: 891px;
+            background: url("img/top.png") -170px 0;
+        }
+
+        .top_box {
+            width: 1214px;
+            height: 268px;
+            margin: 0px auto;
+        }
+
+        .logo_l {
+            width: 32px;
+            height: 30px;
+            background: url("img/sprite.png") 0 0;
+        }
+
+        .logo_r {
+            font-size: 10px;
+            line-height: 1;
+            color: #ffffff;
+            padding: 13px 13px;
+        }
+
+        .logo_l, .logo_r {
+            display: inline-block;
+            float: left;
+            margin-top: 50px;
+        }
+
+        .text {
+            width: 1214px;
+            margin: 0 auto;
+        }
+
+        #text_1, #text_2, #text_3 {
+            display: block;
+        }
+
+        #text_1 {
+            width: 490px;
+            font-size: 44px;
+            color: #f6f9fa;
+        }
+
+        #text_2 {
+            width: 613px;
+            font-size: 16px;
+            color: #f6f9fa;
+            margin: 30px 0;
+        }
+
+        #text_3 {
+            width: 20px;
+            height: 0px;
+            border: 1px solid #ffffff;
+        }
+
+        #text_btn {
+            display: block;
+            width: 153px;
+            font-size: 10px;
+            color: #f6f9fa;
+            font-weight: bold;
+            line-height: 56px;
+            border: 2px solid #f6f6f6;
+            text-align: center;
+            margin: 45px 0;
+
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////////////////////*/
+        .service {
+            height: 891px;
+            background-color: #f6f6f6;
+            overflow: hidden;
+        }
+
+        .service_text {
+            width: 1214px;
+            margin: 0 auto;
+        }
+
+        .service_text_l {
+            width: 423px;
+        }
+
+        #service_text_1, #service_text_2, #service_text_3 {
+            display: block;
+        }
+
+        #service_text_1 {
+            width: 490px;
+            font-size: 44px;
+            color: #333333;
+            padding-top: 280px;
+        }
+
+        #service_text_2 {
+            width: 20px;
+            height: 0px;
+            border: 1px solid #000000;
+            margin-top: 20px;
+        }
+
+        #service_text_3 {
+            width: 423px;
+            font-size: 16px;
+            color: #888888;
+            margin: 50px 0;
+        }
+
+        .service_text_r {
+            width: 791px;
+        }
+
+        .service_text_l, .service_text_r {
+            display: inline-block;
+            float: left;
+        }
+
+        .rhombus {
+            display: inline-block;
+            float: right;
+            width: 272px;
+            height: 272px;
+        }
+
+        .tri_top {
+            border-left: 136px solid rgba(246, 246, 246, 0);
+            border-right: 136px solid rgba(246, 246, 246, 0);
+            border-bottom: 136px solid rgba(255, 255, 255, 1);
+        }
+
+        .tri_bottom {
+            border-left: 136px solid rgba(246, 246, 246, 0);
+            border-right: 136px solid rgba(246, 246, 246, 0);
+            border-top: 136px solid rgba(255, 255, 255, 1);
+        }
+
+        .tri_top, .tri_bottom {
+            display: block;
+        }
+
+        .service_ico {
+            display: block;
+            width: 34px;
+            height: 34px;
+            position: relative;
+            left: 120px;
+            top: -160px;
+        }
+
+        .service_ico_intro {
+            display: block;
+            font-size: 10px;
+            color: #474747;
+            font-weight: bold;
+            position: relative;
+            left: 75px;
+            top: -150px;
+        }
+
+        .service_ico_1 {
+            background: url("img/sprite.png") -40px 0;
+        }
+
+        .service_ico_2 {
+            background: url("img/sprite.png") -78px 0;
+        }
+
+        .service_ico_3 {
+            background: url("img/sprite.png") -115px 0;
+        }
+
+        .service_ico_4 {
+            background: url("img/sprite.png") -148px 0;
+        }
+
+        .service_ico_5 {
+            background: url("img/sprite.png") -188px 0;
+        }
+
+        .service_ico_6 {
+            background: url("img/sprite.png") -232px 0;
+        }
+
+        .service_ico_7 {
+            background: url("img/sprite.png") -270px 0;
+        }
+
+        .service_ico_8 {
+            background: url("img/sprite.png") -308px 0;
+        }
+
+        .rhombus_1 {
+            position: relative;
+            top: 202px;
+            right: 397px;
+        }
+
+        .rhombus_2 {
+            position: relative;
+            top: 345px;
+            right: 267px;
+        }
+
+        .rhombus_3 {
+            position: relative;
+            top: 216px;
+            right: 682px;
+        }
+
+        .rhombus_4 {
+            position: relative;
+            top: -70px;
+            right: -161px;
+        }
+
+        .rhombus_5 {
+            position: relative;
+            top: -198px;
+            right: 254px;
+        }
+
+        .rhombus_6 {
+            position: relative;
+            top: -56px;
+            right: 125px;
+        }
+
+        .rhombus_7 {
+            position: relative;
+            top: -614px;
+            right: -176px;
+        }
+
+        .rhombus_8 {
+            position: relative;
+            top: -470px;
+            right: -305px;
+        }
+
+        .tri_top_6 {
+            border-left: 136px solid rgba(246, 246, 246, 0);
+            border-right: 136px solid rgba(246, 246, 246, 0);
+            border-bottom: 136px solid rgba(40, 40, 46, 1);
+        }
+
+        .tri_bottom_6 {
+            border-left: 136px solid rgba(246, 246, 246, 0);
+            border-right: 136px solid rgba(246, 246, 246, 0);
+            border-top: 136px solid rgba(40, 40, 46, 1);
+        }
+
+        .service_ico_intro_6 {
+            color: #ffffff;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////////////////////*/
+        .work {
+            height: 309px;
+            background-color: #ffffff;
+        }
+
+        .work_text {
+            width: 1214px;
+            margin: 0 auto;
+        }
+
+        .work_text_l {
+            width: 273px;
+        }
+
+        #work_text_1, #work_text_2, #work_text_3 {
+            display: block;
+        }
+
+        #work_text_1 {
+            width: 490px;
+            font-size: 44px;
+            color: #333333;
+            padding-top: 115px;
+        }
+
+        #work_text_2 {
+            width: 20px;
+            height: 0px;
+            border: 1px solid #000000;
+            margin-top: 20px;
+        }
+
+        #work_text_3 {
+            width: 423px;
+            font-size: 16px;
+            color: #888888;
+            margin-top: 115px;
+            margin-left: 284px;
+        }
+        .work_text_l,#work_text_3{
+            display: inline-block;
+            float: left;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////////////////////*/
+        .project {
+            height: 891px;
+            background-color: #28282e;
+        }
+
+        .project_box {
+            width: 1214px;
+            height: 268px;
+            margin: 0px auto;
+        }
+
+        .text {
+            width: 1214px;
+            margin: 0 auto;
+        }
+
+        #project_text_1, #project_text_2, #project_text_3 {
+            display: block;
+        }
+
+        #project_text_1 {
+            width: 490px;
+            font-size: 44px;
+            color: #f6f9fa;
+            padding-top: 268px;
+        }
+        #project_text_2 {
+            width: 20px;
+            height: 0px;
+            border: 1px solid #ffffff;
+            margin-top: 13px;
+        }
+
+        #project_text_3 {
+            width: 403px;
+            font-size: 16px;
+            color: #f6f9fa;
+            margin: 50px 0;
+        }
+
+
+
+        #project_text_btn {
+            display: block;
+            width: 137px;
+            font-size: 10px;
+            color: #f6f9fa;
+            font-weight: bold;
+            line-height: 56px;
+            border: 2px solid #f6f6f6;
+            text-align: center;
+            margin: 75px 0;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="top">
+    <div class="top_box">
+        <i class="logo_l"></i>
+        <i class="logo_r">Logo goes here</i>
+    </div>
+    <div class="text">
+        <i id="text_1">So begins a new age of knowledge</i>
+        <i id="text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae nulla quis turpis cursus
+            pharetra. Fusce blandit nec tortor sit amet ullamcorper.</i>
+        <i id="text_3"></i>
+        <a id="text_btn" href="###">PROJECTS</a>
+    </div>
+</div>
+<div class="service">
+    <div class="service_text">
+        <div class="service_text_l">
+            <i id="service_text_1">OUR SERVICES</i>
+            <i id="service_text_2"></i>
+            <i id="service_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet
+                erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor
+                juato, ac tristique diam iaculis at.</i>
+        </div>
+        <div class="service_text_r f-clear">
+            <div class=" rhombus rhombus_1">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_1" href="###"></a>
+                <s class="service_ico_intro">BUSINESS INTELLIGENCE</s>
+            </div>
+            <div class="rhombus rhombus_2">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_2" href="###"></a>
+                <s class="service_ico_intro">DIGITAL MARKETING </s>
+            </div>
+            <div class="rhombus rhombus_3">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_3" href="###"></a>
+                <s class="service_ico_intro">PRODUCT DEVELOPMENT</s>
+            </div>
+            <div class="rhombus rhombus_4">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_4" href="###"></a>
+                <s class="service_ico_intro">PRODUCT DEVELOPMENT</s>
+            </div>
+            <div class="rhombus rhombus_5">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_5" href="###"></a>
+                <s class="service_ico_intro">PRODUCT DEVELOPMENT</s>
+            </div>
+            <div class="rhombus rhombus_6">
+                <i class="tri_top tri_top_6"></i>
+                <i class="tri_bottom tri_bottom_6"></i>
+                <a class="service_ico service_ico_6" href="###"></a>
+                <s class="service_ico_intro service_ico_intro_6">PRODUCT DEVELOPMENT</s>
+            </div>
+            <div class="rhombus rhombus_7">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_7" href="###"></a>
+                <s class="service_ico_intro">PRODUCT DEVELOPMENT</s>
+            </div>
+            <div class="rhombus rhombus_8">
+                <i class="tri_top"></i>
+                <i class="tri_bottom"></i>
+                <a class="service_ico service_ico_8" href="###"></a>
+                <s class="service_ico_intro">PRODUCT DEVELOPMENT</s>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="work">
+    <div class="work_text f-clear">
+        <div class="work_text_l">
+            <i id="work_text_1">OUR WORKS</i>
+            <i id="work_text_2"></i>
+        </div>
+            <i id="work_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet
+                at.</i>
+
+        </div>
+    </div>
+<div class="project">
+    <div class="project_box">
+        <i id="project_text_1">Project Title Here</i>
+        <i id="project_text_2"></i>
+        <i id="project_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo tupis. Praesent tempus felis diam, in suscipit lectus euismod et. Pellentesque habitant morbi tristique senectus fames ac turpis egestas.</i>
+
+        <a id="project_text_btn" href="###">SEE IT LIVE</a>
+    </div>
+</div>
+</body>
+</html>

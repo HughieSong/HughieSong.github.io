@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>第一阶段实训作业</title>
+    <link rel="stylesheet" href="css/clear.css">
+    <style>
+        .head {
+            height: 738px;
+            background: url(img/head-bg.png) repeat-x;
+        }
+
+        .head_content {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .head_content img {
+            margin-top: 30px;
+        }
+
+        .head_face {
+            width: 840px;
+            height: 270px;
+            margin: 150px auto;
+        }
+
+        .face_l {
+            float: left;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            border: 1px solid #eeeeee;
+            overflow: hidden;
+        }
+
+        .face_l a {
+            display: block;
+            width: 254px;
+            height: 254px;
+            background: url("img/photo.png");
+            background-position: center;
+            border-radius: 50%;
+            margin: 7px;
+        }
+
+        .face_r {
+            float: left;
+            width: 430px;
+            text-align: center;
+            margin-left: 99px;
+        }
+
+        .face_name {
+            font: 24px "Consolas";
+            color: #fff;
+            font-weight: 900;
+        }
+
+        .face_line {
+            display: inline-block;
+            width: 290px;
+            height: 1px;
+            background-color: #52edc7;
+        }
+
+        .face_job {
+            font-size: 36px;
+            font-weight: 100;
+            color: #fff;
+        }
+
+        .btn {
+            border: 2px solid #fff;
+            border-radius: 2px;
+            padding: 20px 10px;
+            color: #fff;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #52edc7;
+            border-color: #52edc7;
+            color: #206957;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .about_me {
+            /*min-width: 1583px;*/
+            height: 494px;
+        }
+
+        .about_me_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+            text-indent: 2em;
+        }
+
+        .about_me_title {
+            font-size: 26px;
+            padding-top: 30px;
+        }
+
+        .about_me_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .about_me_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .about_me_ico {
+            display: inline-block;
+            float: left;
+            width: 19px;
+            height: 21px;
+            margin: 0 32px;
+            background: url("img/ico.png");
+            background-position: -64px 0;
+        }
+
+        .about_me_box {
+            height: 127px;
+        }
+
+        .about_me_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .about_me_info {
+            color: #888b90;
+            font-size: 16px;
+            padding-top: 43px;
+        }
+
+        .about_me_link {
+            width: 590px;
+            margin: 0 300px;
+        }
+
+        .about_me_link > a {
+            display: inline-block;
+            float: left;
+            width: 70px;
+            border-radius: 50%;
+            background-color: #52edc7;
+            margin: 43px 14px 37px 14px;
+        }
+
+        .about_me_link > a > i {
+            display: block;
+            width: 21px;
+            height: 21px;
+            background: url("img/ico.png");
+            margin: 35% auto;
+        }
+
+        #about_me_ico_1 {
+            background-position: 7px -80px;
+        }
+
+        #about_me_ico_2 {
+            background-position: -44px -80px;
+        }
+
+        #about_me_ico_3 {
+            background-position: -73px -80px;
+        }
+
+        #about_me_ico_4 {
+            background-position: -101px -80px;
+        }
+
+        #about_me_ico_5 {
+            background-position: -162px -80px;
+        }
+
+        #about_me_ico_6 {
+            background-position: -17px -80px;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .tri_overflow {
+            overflow: hidden;
+            margin-top: -30px;
+        }
+
+        .triangle_box_1 {
+            border-top: 250px solid rgba(26, 188, 156, 0);
+            border-right: 7500px solid rgba(26, 188, 156, 1);
+            margin-top: -70px;
+        }
+
+        .my_skills {
+            height: 502px;
+            background-color: #1abc9c;
+        }
+
+        .my_skills_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .my_skills_title {
+            font-size: 26px;
+            padding-top: 30px;
+            color: #fff;
+        }
+
+        .my_skills_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .my_skills_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .my_skills_ico {
+            display: inline-block;
+            float: left;
+            width: 23px;
+            height: 21px;
+            margin: 0 30px;
+            background: url("img/ico.png");
+            background-position: -132px -80PX;
+        }
+
+        .my_skills_box {
+            width: 312px;
+            height: 127px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .my_skills_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .my_skills_data {
+            margin: 72px auto;
+        }
+
+        .my_skills_cir {
+            display: inline-block;
+            width: 170px;
+            background: url("img/circle.png") no-repeat;
+            margin: 0 11px;
+        }
+
+        .my_skills_cir_data {
+            display: block;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            font-size: 28px;
+            margin: 39% auto;
+        }
+
+        .my_skills_cir_data + p {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .triangle_box_2 {
+            border-right: 7500px solid rgba(26, 188, 156, 1);
+            border-bottom: 250px solid rgba(238, 238, 238, 1);
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .education {
+            height: 552px;
+            background-color: #eeeeee;
+        }
+
+        .education_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .education_title {
+            font-size: 26px;
+            color: #2b2b2b;
+        }
+
+        .education_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .education_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .education_ico {
+            display: inline-block;
+            float: left;
+            width: 23px;
+            height: 21px;
+            margin: 0 30px;
+            background: url("img/ico.png");
+            background-position: -30px 0;
+        }
+
+        .education_box {
+            margin: -52px auto;
+            height: 91px;
+        }
+
+        .education_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .education_time {
+            display: block;
+            width: 163px;
+            height: 76px;
+            padding-left: 103px;
+            padding-right: 103px;
+            margin: 0 auto;
+        }
+
+        .education_top {
+            display: block;
+            width: 163px;
+            height: 38px;
+            background-color: #52edc7;
+            padding: 10px auto;
+        }
+
+        .education_bottom {
+            display: block;
+            width: 163px;
+            height: 38px;
+            background-color: #4ad7b4;
+        }
+
+        .education_top span, .education_bottom span {
+            display: block;
+            height: 14px;
+            line-height: 38px;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .education_tri {
+            width: 0;
+            height: 26px;
+            margin: 0 auto;
+            border-left: 21px solid rgba(82, 237, 199, 0);
+            border-right: 21px solid rgba(82, 237, 199, 0);
+            border-bottom: 21px solid rgba(82, 237, 199, 1);
+        }
+
+        .edu_content {
+            display: block;
+            width: 368px;
+            height: 251px;
+            margin: 0 auto;
+            border-right: 1px solid #e2e2e2;
+            border-left: 1px solid #e2e2e2;
+            border-bottom: 1px solid #c3c3c3;
+        }
+
+        .edu_top {
+            display: block;
+            width: 368px;
+            height: 116px;
+            background-color: #52edc7;
+            font-size: 14px;
+        }
+
+        .edu_top span {
+            display: block;
+            width: 260px;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 900;
+            color: #4a4a4a;
+            padding-top: 8px;
+            margin: 0 auto;
+        }
+
+        .edu_top span + span {
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 28px;
+            color: #fff;
+        }
+
+        .edu_bottom {
+            display: block;
+            width: 368px;
+            height: 135px;
+            background-color: #fff;
+        }
+
+        .edu_bottom p {
+            font-size: 14px;
+            width: 260px;
+            line-height: 30px;
+            color: #888b90;
+            text-indent: 2em;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .edu_center {
+            display: inline-block;
+            float: left;
+        }
+
+        .edu_ctr {
+            margin: 90px auto;
+        }
+
+        .edu_center_2 {
+            margin: 0 23px 0 23px;
+        }
+
+        .separate_line {
+            width: 252px;
+            height: 3px;
+            background-color: #dcdcdf;
+            margin: 0 auto;
+        }
+
+        .separate_line_papa {
+            background-color: #eeeeee;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .exp {
+            height: 629px;
+            background-color: #eeeeee;
+        }
+
+        .exp_title {
+            font-size: 26px;
+            color: #2b2b2b;
+        }
+
+        .exp_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .exp_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .exp_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 21px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: -225px 0;
+        }
+
+        .exp_box {
+            margin: 0 auto;
+            padding-top: 60px;
+        }
+
+        .exp_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .exp_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .exp_top {
+            display: block;
+            height: 37px;
+            background-color: #52edc7;
+        }
+
+        .exp_top span {
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .exp_top span + span {
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 28px;
+            color: #fff;
+        }
+
+        .exp_bottom {
+            display: block;
+            width: 368px;
+            height: 323px;
+            background-color: #fff;
+        }
+
+        .exp_bottom span {
+            display: block;
+            padding-top: 20px;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 900;
+            color: #4a4a4a;
+        }
+
+        .exp_bottom i {
+            display: block;
+            padding-top: 5px;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 900;
+            color: #c1c1c1;
+        }
+
+        .exp_bottom p {
+            display: block;
+            width: 336px;
+            padding-top: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            color: #888b90;
+            margin-left: 10px;
+        }
+
+        .exp_center {
+            display: inline-block;
+            float: left;
+            border-right: 1px solid #e2e2e2;
+            border-left: 1px solid #e2e2e2;
+            border-bottom: 1px solid #c3c3c3;
+        }
+
+        .exp_ctr {
+            margin: 64px auto;
+        }
+
+        .exp_center_2 {
+            margin: 0 23px 0 23px;
+        }
+
+        .triangle_box_3 {
+            border-top: 250px solid rgba(238, 238, 238, 1);
+            border-right: 7500px solid rgba(255, 255, 255, 1);
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .services {
+            height: 585px;
+            overflow: hidden;
+        }
+
+        .services_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services_title {
+            font-size: 26px;
+            padding-top: 30px;
+        }
+
+        .services_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .services_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .services_ico {
+            display: inline-block;
+            float: left;
+            width: 24px;
+            height: 22px;
+            margin: 0 30px;
+            background: url("img/ico.png");
+            background-position: -126px 0;
+        }
+
+        .services_box {
+            width: 312px;
+            height: 127px;
+            margin: 0 auto;
+        }
+
+        .services_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .services_link_rad {
+            display: block;
+            float: left;
+            border-radius: 50%;
+            margin: 57px 59px 0 47px;
+        }
+
+        #services_link_rad_1 {
+            background-color: #ff9560;
+            border: 1px solid #ff9560;
+        }
+
+        #services_link_rad_2 {
+            background-color: #59a8ff;
+            border: 1px solid #59a8ff;
+        }
+
+        #services_link_rad_3 {
+            background-color: #41fa8f;
+            border: 1px solid #41fa8f;
+        }
+
+        #services_link_rad_4 {
+            background-color: #c561ef;
+            border: 1px solid #c561ef;
+        }
+
+        .services_link_box {
+            display: inline-block;
+            width: 287px;
+        }
+
+        .services_link > .services_link_box > s > a {
+            display: inline-block;
+            float: left;
+            width: 168px;
+            height: 168px;
+            border-radius: 50%;
+            margin: 9px 9px;
+            overflow: hidden;
+        }
+
+        #services_link_rad_1 a {
+            background-color: #f9671e;
+        }
+
+        #services_link_rad_2 a {
+            background-color: #007aff;
+        }
+
+        #services_link_rad_3 a {
+            background-color: #2ecc71;
+        }
+
+        #services_link_rad_4 a {
+            background-color: #8e44ad;
+        }
+
+        .services_link > .services_link_box > s > a > i {
+            display: block;
+            width: 130px;
+            height: 130px;
+            background: url("img/ico.png");
+            margin: 47px 45px;
+        }
+
+        #services_ico_1 {
+            background-position: 9px -113px;
+        }
+
+        #services_ico_2 {
+            background-position: -124px -113px;
+        }
+
+        #services_ico_3 {
+            background-position: -255px -115px;
+        }
+
+        #services_ico_4 {
+            background-position: -377px -113px;
+        }
+
+        .services_link_box p {
+            display: block;
+            float: left;
+            width: 287px;
+            height: 90px;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 90px;
+        }
+
+        .services_link_box p + p {
+            display: block;
+            float: left;
+            width: 247px;
+            height: 200px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #888b90;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .tri_overflow_4 {
+            overflow: hidden;
+        }
+
+        .triangle_box_4 {
+            border-right: 7500px solid rgba(255, 255, 255, 1);
+            border-bottom: 250px solid rgba(238, 238, 238, 0);
+            margin-top: 6px;
+        }
+
+        .portfolio {
+            height: 1213px;
+            background: url("img/background.jpg") no-repeat center;
+            margin-bottom: -6px;
+            text-align: center;
+        }
+
+        .portfolio_content {
+            width: 1170px;
+            margin: 150px auto;
+            text-align: center;
+            margin-top: -280px;
+        }
+
+        .portfolio_title {
+            font-size: 26px;
+            padding-top: 30px;
+            color: #fff;
+        }
+
+        .portfolio_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .portfolio_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .portfolio_ico {
+            display: inline-block;
+            float: left;
+            width: 28px;
+            height: 25px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: -226px -80px;
+        }
+
+        .portfolio_box {
+            height: 127px;
+            padding-top: 80px;
+        }
+
+        .portfolio_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .portfolio_info {
+            color: #fff;
+            font-size: 14px;
+            padding: 23px 0;
+        }
+
+        .portfolio_btn {
+            margin: -150px auto;
+        }
+
+        #port_btn_1 {
+            width: 63px;
+            height: 37px;
+            padding: 0;
+            line-height: 2.8;
+            margin: 0 5px;
+        }
+
+        #port_btn_2 {
+            width: 104px;
+            height: 37px;
+            padding: 0;
+            line-height: 2.8;
+            margin: 0 5px;
+        }
+
+        #port_btn_3 {
+            width: 117px;
+            height: 37px;
+            padding: 0;
+            line-height: 2.8;
+            margin: 0 5px;
+        }
+
+        #port_btn_4 {
+            width: 130px;
+            height: 37px;
+            padding: 0;
+            line-height: 2.8;
+            margin: 0 5px;
+        }
+
+        #port_btn_5 {
+            width: 81px;
+            height: 37px;
+            padding: 0;
+            line-height: 2.8;
+            margin: 0 5px;
+        }
+
+        .portfolio_photo_1 {
+            width: 902px;
+            height: 301px;
+            margin-top: 170px;
+            margin: 0 auto;
+        }
+
+        .portfolio_photo_2 {
+            width: 902px;
+            height: 301px;
+            margin-top: 170px;
+            margin: 0 auto;
+        }
+
+        .portfolio_photo {
+            width: 1170px;
+            margin: 0 auto;
+            position: relative;
+            top: 170px;
+            margin-bottom: 284px;
+        }
+
+        #img_1 {
+            width: 300px;
+            background: url("img/1.png") no-repeat;
+        }
+
+        #img_2 {
+            width: 300px;
+            background: url("img/2.png") no-repeat;
+        }
+
+        #img_3 {
+            width: 300px;
+            background: url("img/3.png") no-repeat;
+        }
+
+        #img_4 {
+            width: 300px;
+            background: url("img/4.png") no-repeat;
+        }
+
+        #img_5 {
+            width: 300px;
+            background: url("img/5.png") no-repeat;
+        }
+
+        #img_6 {
+            width: 300px;
+            background: url("img/6.png") no-repeat;
+        }
+
+        .portfolio_img {
+            display: inline-block;
+            float: left;
+            margin: 0 auto;
+        }
+
+        .photo_view {
+            display: inline-block;
+            width: 300px;
+            height: 301px;
+            background-color: rgba(94, 216, 207, 0.6);
+            margin: 0 auto;
+            position: relative;
+            z-index: -1;
+        }
+
+        .photo_view a {
+            width: 300px;
+            height: 301px;
+        }
+
+        .photo_view i {
+            width: 300px;
+            height: 20px;
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .photo_view span {
+            width: 300px;
+            height: 20px;
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .photo_view a {
+            display: block;
+            width: 131px;
+            height: 47px;
+            border: 2px solid #fff;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 46px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .portfolio_img:hover {
+            cursor: pointer;
+        }
+
+        .portfolio_img:hover:hover .photo_view {
+            position: relative;
+            z-index: 2;
+        }
+
+        .tri_overflow_5 {
+            overflow: hidden;
+            position: relative;
+            top: -131px;
+        }
+
+        .triangle_box_5 {
+            border-top: 250px solid rgba(26, 188, 156, 0);
+            border-right: 7500px solid rgba(82, 237, 199, 1);
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .process {
+            background-color: #52edc7;
+        }
+
+        .process_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .process_title {
+            font-size: 26px;
+            padding-top: 30px;
+            color: #fff;
+        }
+
+        .process_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .process_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .process_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 25px;
+            margin: 0 29px;
+            background: url("img/ico.png");
+            background-position: -194px -81px;
+        }
+
+        .process_box {
+            height: 127px;
+        }
+
+        .process_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .process_link > a {
+            display: inline-block;
+            float: left;
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 30px 24px;
+        }
+
+        .process_link > a > s {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .process_link > a > i {
+            display: block;
+            width: 48px;
+            height: 50px;
+            background: url("img/ico.png");
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+
+        .process_link > i {
+            width: 16px;
+            height: 202px;
+            background: url("img/arrows.png") no-repeat center #52edc7;
+        }
+
+        .process_link_arrows {
+            display: inline-block;
+            float: left;
+        }
+
+        #process_ico_1 {
+            background-position: -229px -30px;
+        }
+
+        #process_ico_2 {
+            background-position: 6px -30px;
+        }
+
+        #process_ico_3 {
+            background-position: -43px -30px;
+        }
+
+        #process_ico_4 {
+            background-position: -189px -30px;
+        }
+
+        #process_ico_5 {
+            background-position: -98px -30px;
+        }
+
+        #process_ico_6 {
+            background-position: -145px -30px;
+        }
+
+        .triangle_box_6 {
+            border-right: 7500px solid rgba(82, 237, 199, 1);
+            border-bottom: 250px solid rgba(238, 238, 238, 1);
+            margin-top: 0;
+        }
+
+        .tri_overflow_6 {
+            overflow: hidden;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .test {
+            height: 790px;
+            background-color: #eeeeee;
+            margin-top: -60px;
+        }
+
+        .test_title {
+            font-size: 26px;
+            color: #2b2b2b;
+        }
+
+        .test_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .test_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .test_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 21px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: -92px 0;
+        }
+
+        .test_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .test_content {
+            width: 1170px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .last,.next,.test_center{
+            display: inline-block;
+        }
+        .switch{
+            display: block;
+            font-size: 36px;
+            font-weight: bold;
+            color: #c2c2c2;
+        }
+        .last,.next{
+            width: 16px;
+            height: 187px;
+            overflow: hidden;
+            margin: 0 30px;
+        }
+
+        .last i{
+            margin-top: -13px;
+            margin-left: 5px;
+        }
+        .next i{
+            margin-top: -13px;
+            margin-left: -15px;
+        }
+
+        .test_top {
+            display: block;
+            height: 14px;
+            background-color: #52edc7;
+        }
+
+        .test_bottom {
+            display: block;
+            width: 565px;
+            height: 348px;
+            background-color: #fff;
+            border-right: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            border-radius: 2px;
+        }
+
+        .test_bottom a {
+            float: left;
+        }
+
+        .test_center {
+            display: inline-block;
+        }
+
+        .test_ctr {
+            margin: 64px auto;
+        }
+
+        .test_content s i {
+            float: left;
+            border-radius: 50%;
+            background-color: #eeeeee;
+            border: 1px solid #f1fafa;
+            overflow: hidden;
+            margin-left: 40px;
+            margin-top: 70px;
+        }
+
+        .test_content b {
+            display: block;
+            width: 169px;
+            height: 169px;
+            background: url(img/test_face.png);
+            background-position: -13px 0px;
+            border-radius: 50%;
+            margin: 6px;
+        }
+
+        .test_face_r {
+            float: left;
+            width: 270px;
+            margin-left: 40px;
+        }
+
+        .test_face_text {
+            font: 14px "Consolas";
+            color: #4a4a4a;
+            font-weight: 900;
+        }
+
+        .test_face_name {
+            font-size: 14px;
+            color: #888b90;
+            margin-top: 50px;
+        }
+
+        .test_mark_top {
+            width: 25px;
+            height: 95px;
+            background: url("img/quotation_l.png") no-repeat center;
+        }
+
+        .test_mark_bottom {
+            width: 25px;
+            height: 95px;
+            background: url("img/quotation_r.png") no-repeat center;
+        }
+
+        .test_center_bottom {
+            font-size: 16px;
+            line-height: 64px;
+            color: #2b2b2b;
+        }
+
+        .separate_line_green {
+            width: 252px;
+            height: 1px;
+            background-color: #52edc7;
+            margin: 0 auto;
+            margin-top: -62px;
+        }
+
+        .adv {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        .ico_adv {
+            display: inline-block;
+            width: 260px;
+            height: 50px;
+            background: url("img/ico.png");
+            margin-top: 30px;
+        }
+
+        #ico_adv_1 {
+            background-position: 0px 130px;
+        }
+
+        #ico_adv_2 {
+            background-position: 0px 180px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        #ico_adv_3 {
+            background-position: 0px 80px;
+        }
+
+        .triangle_box_7 {
+            border-top: 250px solid rgba(238, 238, 238, 1);
+            border-right: 7500px solid rgba(255, 255, 255, 1);
+        }
+
+        .tri_overflow_7 {
+            overflow: hidden;
+            margin-top: -140px;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .blog {
+            height: 1370px;
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .blog_title {
+            font-size: 26px;
+            color: #2b2b2b;
+        }
+
+        .blog_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .blog_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .blog_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 21px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: 0 0;
+        }
+
+        .blog_box {
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .blog_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .blog_1 {
+            display: inline-block;
+            float: left;
+            border: 1px solid #eeeeee;
+            margin-top: 25px;
+        }
+
+        .blog_1_img {
+            display: block;
+            height: 286px;
+            background: url("img/7.png");
+        }
+
+        .blog_2_img {
+            display: block;
+            height: 286px;
+            background: url("img/8.png");
+        }
+
+        .blog_3_img {
+            display: block;
+            height: 286px;
+            background: url("img/9.png");
+        }
+
+        .blog_4_img {
+            display: block;
+            height: 286px;
+            background: url("img/7.png");
+        }
+
+        .blog_5_img {
+            display: block;
+            height: 286px;
+            background: url("img/8.png");
+        }
+
+        .blog_6_img {
+            display: block;
+            height: 286px;
+            background: url("img/9.png");
+        }
+
+        .blog_green_tri_top {
+            display: block;
+            float: left;
+            border-bottom: 46px solid rgba(82, 237, 199, 1);
+            border-left: 46px solid rgba(82, 237, 199, 0);
+            border-right: 46px solid rgba(82, 237, 199, 0);
+            margin-left: 20px;
+            margin-top: -46px;
+        }
+
+        .blog_green_tri_bottom {
+            display: block;
+            float: left;
+            border-top: 46px solid rgba(82, 237, 199, 1);
+            border-left: 46px solid rgba(82, 237, 199, 0);
+            border-right: 46px solid rgba(82, 237, 199, 0);
+            margin-left: 20px;
+        }
+
+        .blog_con_top {
+            display: block;
+            width: 288px;
+            height: 76px;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 32px;
+            color: #2b2b2b;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        .blog_con_center {
+            display: block;
+            width: 288px;
+            height: 107px;
+            line-height: 30px;
+            color: #888b90;
+            margin-left: 20px;
+        }
+
+        .blog_con_bottom {
+            display: block;
+            width: 150px;
+            line-height: 37px;
+            color: #888b90;
+        }
+
+        .blog_month {
+            display: block;
+            float: left;
+            margin-left: -61px;
+            margin-top: -30px;
+        }
+
+        .blog_month_top {
+            width: 30px;
+            font-size: 18px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .blog_month_bottom {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .blog_separate_line {
+            display: block;
+            width: 99px;
+            height: 1px;
+            background-color: #dedede;
+            margin-left: 15px;
+        }
+
+        .blog_separate_line_bottom {
+            display: block;
+            width: 368px;
+            height: 1px;
+            background-color: #dedede;
+        }
+
+        .blog_space {
+            margin: 0 23px;
+            margin-top: 25px;
+        }
+
+        .tri_overflow_8 {
+            overflow: hidden;
+        }
+
+        .triangle_box_8 {
+            border-right: 7500px solid rgba(255, 255, 255, 1);
+            border-bottom: 250px solid rgba(82, 237, 199, 1);
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .contact {
+            height: 720px;
+            background-color: #52edc7;
+            margin-top: -120px;
+        }
+
+        .contact_title {
+            font-size: 26px;
+            color: #2b2b2b;
+        }
+
+        .contact_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .contact_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .contact_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 21px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: -160px 0;
+        }
+
+        .contact_box {
+            margin: 0 auto;
+            text-align: center;
+            width: 1170px;
+            height: 91px;
+        }
+
+        .contact_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .contact_content_center {
+            width: 1170px;
+            margin: 50px auto;
+        }
+
+        .contact_con_l {
+            width: 420px;
+        }
+
+        .contact_con_r {
+            width: 740px;
+            height: 510px;
+        }
+
+        .contact_con_l, .contact_con_r {
+            display: inline-block;
+            float: left;
+        }
+
+        .contact_con_l > i {
+            display: block;
+            margin-left: 90px;
+        }
+
+        .contact_con_r > i {
+            display: block;
+            margin-left: 27px;
+        }
+
+        .contact_top {
+            font-size: 16px;
+            line-height: 60px;
+        }
+
+        .contact_line {
+            width: 252px;
+            height: 1px;
+            background-color: #2b2b2b;
+        }
+
+        .contact_center {
+            width: 260px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 30px 0;
+        }
+
+        .contact_num {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .contact_email {
+            font-size: 14px;
+            margin: 30px 0;
+        }
+
+        .contact_web_add {
+            font-size: 14px;
+        }
+
+        .contact_input_E-mail:hover {
+            width: 315px;
+            height: 50px;
+            background-color: #fff;
+            border: 3px solid #40c4a4;
+            border-radius: 1px;
+            margin-top: 45px;
+        }
+
+        .contact_input_name:hover {
+            width: 315px;
+            height: 50px;
+            background-color: #fff;
+            border: 3px solid #40c4a4;
+            border-radius: 1px;
+            margin-top: 45px;
+        }
+
+        .contact_input_name input {
+            width: 260px;
+            height: 48px;
+            border: none;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .contact_input_name, .contact_input_E-mail {
+            width: 319px;
+            height: 54px;
+            background-color: #fff;
+            border: 1px solid #d2d2d2;
+            border-radius: 1px;
+            margin-top: 45px;
+            float: left;
+        }
+
+        .contact_input_E-mail input {
+            width: 260px;
+            height: 48px;
+            border: none;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        textarea {
+            width: 665px;
+            height: 221px;
+            margin-top: 30px;
+            font-size: 16px;
+            border: 1px solid #d2d2d2;
+            resize: none;
+        }
+
+        .send {
+            width: 315px;
+            border: 3px solid #36967e;
+            border-radius: 3px;
+            margin-top: 28px;
+        }
+
+        button {
+            width: 315px;
+            height: 50px;
+            background-color: #52edc7;
+            border: none;
+            font-size: 16px;
+            font-weight: 900;
+            color: #36967e;
+            cursor: pointer;
+        }
+
+        button div {
+            display: inline-block;
+            width: 26px;
+            height: 20px;
+            background: url("img/ico.png") #52edc7;
+            background-position: -260px 0;
+            margin-left: -8px;
+            margin-top: 6px;
+            vertical-align: 3px;
+        }
+
+        #send {
+            width: 55px;
+            height: 35px;
+            display: inline-block;
+            border: none;
+            margin-top: -63px;
+            margin-left: -8px;
+            line-height: 35px;
+            vertical-align: 5px;
+        }
+
+        .tri_overflow_9 {
+            overflow: hidden;
+        }
+
+        .triangle_box_9 {
+            border-top: 150px solid rgba(82, 237, 199, 1);
+            border-right: 820px solid rgba(255, 255, 255, 1);
+            border-left: 792px solid rgba(255, 255, 255, 1);
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .download {
+            height: 250px;
+            background-color: #fff;
+            margin-top: -110px;
+        }
+
+        .download_l {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .download_r {
+            display: inline-block;
+            float: left;
+            width: 85px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: #2b2b2b;
+        }
+
+        .download_ico {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 21px;
+            margin: 0 28px;
+            background: url("img/ico.png");
+            background-position: -192px 0;
+        }
+
+        .download_box {
+            margin: 0 auto;
+            padding-top: 60px;
+            text-align: center;
+            width: 1170px;
+            margin-top: 130px;
+        }
+
+        .download_separate {
+            width: 254px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .download_box button {
+            width: 248px;
+            height: 53px;
+            background-color: #f1c40f;
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 52px;
+            color: #2b2b2b;
+            border-top: 2px solid #f1c40f;
+            border-left: 2px solid #f1c40f;
+            border-right: 2px solid #f1c40f;
+            border-bottom: 2px solid #b8950a;
+            border-radius: 2px;
+            margin-top: 35px;
+        }
+
+        /*////////////////////////////////////////////////////////////////////////////////*/
+        .tail {
+            background-color: #888b90;
+        }
+
+        .tail img {
+            vertical-align: -4px;
+        }
+
+        .tail i {
+            display: block;
+            width: 1170px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 80px;
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="head_content">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="head_face">
+        <div class="face_l">
+            <a href="###"></a>
+        </div>
+        <div class="face_r">
+            <p class="face_name">I ' m　H e w i e　S o n g</p>
+            <span class="face_line"></span>
+            <p class="face_job">WEB　ENGINEER</p>
+            <a href="###" class="btn">DOWNLOAD　MY RESUME</a>
+        </div>
+    </div>
+</div>
+<div class="about_me">
+    <div class="about_me_content">
+        <div class="about_me_box">
+            <p class="about_me_title">A B O U T　M E</p>
+            <div class="about_me_separate f-clear">
+                <span class="about_me_l"></span>
+                <i class="about_me_ico"></i>
+                <span class="about_me_r"></span>
+            </div>
+
+        </div>
+        <p class="about_me_info">
+            小罗伯特·唐尼（Robert Downey Jr.），1965年4月4日出生于纽约州纽约市，美国电影演员、制片人。
+            1971年，5岁的他出演电影《狗》。1987年，22岁的小罗伯特·唐尼主演了喜剧片《泡妞专家》，该影片是他主演的第一部电影。
+            1993年，小罗伯特·唐尼凭借电影《卓别林》获得第65届奥斯卡最佳男主角的提名。
+            1997年，他因吸毒被逮捕并强制戒毒。2001年，他凭借《甜心俏佳人》获得第58届美国电影电视金球奖。
+            2007年，他主演了《十二宫》。2008年，他出演了电影《钢铁侠》。
+            2010年，他凭借《大侦探福尔摩斯》获得第67届金球奖电影类音乐喜剧类最佳男主角奖。
+            2012年，他主演了《复仇者联盟》。2013年，他主演的《钢铁侠3》上映。
+            2013年1月，小罗伯特·唐尼获得第39届人民选择奖最受欢迎男演员奖。
+            2015年1月他再次获得人民选择奖最受欢迎男演员奖。
+            2015年，小罗伯特·唐尼收入8000万美元，居福布斯全球演员富豪榜排名第一位。
+        </p>
+        <div class="about_me_link f-clear">
+            <a href="###"><i id="about_me_ico_1"></i></a>
+            <a href="###"><i id="about_me_ico_2"></i></a>
+            <a href="###"><i id="about_me_ico_3"></i></a>
+            <a href="###"><i id="about_me_ico_4"></i></a>
+            <a href="###"><i id="about_me_ico_5"></i></a>
+            <a href="###"><i id="about_me_ico_6"></i></a>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow">
+    <div class="triangle_box_1"></div>
+</div>
+<div class="my_skills">
+    <div class="my_skills_content">
+        <div class="my_skills_box">
+            <p class="my_skills_title">M Y　S K I L L S</p>
+            <div class="my_skills_separate f-clear">
+                <span class="my_skills_l"></span>
+                <i class="my_skills_ico"></i>
+                <span class="my_skills_r"></span>
+            </div>
+        </div>
+        <div class="my_skills_data f-clear">
+            <i class="my_skills_cir" id="my_skills_cir_1"><s class="my_skills_cir_data">75%</s>
+                <p>PHOTOSHOP</p></i>
+            <i class="my_skills_cir"><s class="my_skills_cir_data">68%</s>
+                <p>ILLUSTRATOR</p></i>
+            <i class="my_skills_cir"><s class="my_skills_cir_data">50%</s>
+                <p>PHOTOGRAPHY</p></i>
+            <i class="my_skills_cir"><s class="my_skills_cir_data">95%</s>
+                <p>HTML<sub>5</sub> /CSS<sub>3</sub></p></i>
+            <i class="my_skills_cir"><s class="my_skills_cir_data">80%</s>
+                <p>C<sub>4</sub>D</p></i>
+            <i class="my_skills_cir" id="my_skills_cir_6"><s class="my_skills_cir_data">100%</s>
+                <p>AFTER EFFECT</p></i>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow">
+    <div class="triangle_box_2"></div>
+</div>
+<div class="education">
+    <div class="education_content">
+        <div class="education_box">
+            <p class="education_title">E D U C A T I O N</p>
+            <div class="education_separate f-clear">
+                <span class="education_l"></span>
+                <i class="education_ico"></i>
+                <span class="education_r"></span>
+            </div>
+        </div>
+        <div class="edu_ctr f-clear">
+            <div class="edu_center">
+                <div class="education_box_con f-clear">
+                    <i class="education_time"><s class="education_top"><span>2012-2013</span> </s><s
+                            class="education_bottom"><span>Graduated</span></s></i>
+                    <div class="education_tri"></div>
+                    <i class="edu_content"><s class="edu_top"><span>MASTER DEGREE OF COMPUTER SCIENCE</span><span>Oxford University</span></s><s
+                            class="edu_bottom"><p>This is Photoshop's version Lorem Ipsum.Well,the way they make shows
+                        is,they make one show.</p></s></i>
+                </div>
+            </div>
+            <div class="edu_center edu_center_2">
+                <div class="education_box_con f-clear">
+                    <i class="education_time"><s class="education_top"><span>2012-2013</span> </s><s
+                            class="education_bottom"><span>Graduated</span></s></i>
+                    <div class="education_tri"></div>
+                    <i class="edu_content"><s class="edu_top"><span>MASTER DEGREE OF COMPUTER SCIENCE</span><span>Oxford University</span></s><s
+                            class="edu_bottom"><p>This is Photoshop's version Lorem Ipsum.Well,the way they make shows
+                        is,they make one show.</p></s></i>
+                </div>
+            </div>
+            <div class="edu_center">
+                <div class="education_box_con f-clear">
+                    <i class="education_time"><s class="education_top"><span>2012-2013</span> </s><s
+                            class="education_bottom"><span>Graduated</span></s></i>
+                    <div class="education_tri"></div>
+                    <i class="edu_content"><s class="edu_top"><span>MASTER DEGREE OF COMPUTER SCIENCE</span><span>Oxford University</span></s><s
+                            class="edu_bottom"><p>This is Photoshop's version Lorem Ipsum.Well,the way they make shows
+                        is,they make one show.</p></s></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="separate_line_papa">
+    <div class="separate_line"></div>
+</div>
+<div class="exp">
+    <div class="exp_content">
+        <div class="exp_box">
+            <p class="exp_title">W O R K　E X P E R I E N C E</p>
+            <div class="exp_separate f-clear">
+                <span class="exp_l"></span>
+                <i class="exp_ico"></i>
+                <span class="exp_r"></span>
+            </div>
+
+        </div>
+        <div class="exp_ctr f-clear">
+            <div class="exp_center">
+                <div class="exp_box_con f-clear">
+                    <i class="exp_content"><s class="exp_top"><span>2013 - Now</span> </s><s class="exp_bottom"><span>Google</span><i>Visual
+                        Designer</i>
+                        <p>Now that there is the Tec-9,a crappy spray gun from South Miami.This gun is advertised as the
+                            most popular gun in American crime.Do you believe that shit?It actually says that in the
+                            little book that comes with it:the most popular gun in</p></s></i>
+                </div>
+            </div>
+            <div class="exp_center exp_center_2">
+                <div class="exp_box_con f-clear">
+                    <i class="exp_content "><s class="exp_top"><span>2013 - Now</span> </s><s class="exp_bottom"><span>Google</span><i>Visual
+                        Designer</i>
+                        <p>Now that there is the Tec-9,a crappy spray gun from South Miami.This gun is advertised as the
+                            most popular gun in American crime.Do you believe that shit?It actually says that in the
+                            little book that comes with it:the most popular gun in</p></s></i>
+                </div>
+            </div>
+            <div class="exp_center">
+                <div class="exp_box_con f-clear">
+                    <i class="exp_content"><s class="exp_top"><span>2013 - Now</span> </s><s class="exp_bottom"><span>Google</span><i>Visual
+                        Designer</i>
+                        <p>Now that there is the Tec-9,a crappy spray gun from South Miami.This gun is advertised as the
+                            most popular gun in American crime.Do you believe that shit?It actually says that in the
+                            little book that comes with it:the most popular gun in</p></s></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow">
+    <div class="triangle_box_3"></div>
+</div>
+<div class="services">
+    <div class="services_content">
+        <div class="services_box">
+            <p class="services_title">S E R V I C E S</p>
+            <div class="services_separate f-clear">
+                <span class="services_l"></span>
+                <i class="services_ico"></i>
+                <span class="services_r"></span>
+            </div>
+        </div>
+        <div class="services_link f-clear">
+            <div class="services_link_box">
+                <s id="services_link_rad_1" class="services_link_rad"><a href="###"><i id="services_ico_1"></i></a></s>
+                <p>Web Design</p>
+                <p>I'm gonna shoot you in the head then and there.Then I'm gonna shoot that bitch in the kneecaps.</p>
+
+            </div>
+            <div class="services_link_box">
+                <s id="services_link_rad_2" class="services_link_rad"><a href="###"><i id="services_ico_2"></i></a></s>
+                <p>Web Design</p>
+                <p>I'm gonna shoot you in the head then and there.Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+            <div class="services_link_box">
+                <s id="services_link_rad_3" class="services_link_rad"><a href="###"><i id="services_ico_3"></i></a></s>
+                <p>Web Design</p>
+                <p>I'm gonna shoot you in the head then and there.Then I'm gonna shoot that bitch in the kneecaps.</p>
+
+            </div>
+            <div class="services_link_box">
+                <s id="services_link_rad_4" class="services_link_rad"><a href="###"><i id="services_ico_4"></i></a></s>
+                <p>Web Design</p>
+                <p>I'm gonna shoot you in the head then and there.Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio">
+    <div class="tri_overflow_4">
+        <div class="triangle_box_4"></div>
+    </div>
+    <div class="portfolio_content">
+        <div class="portfolio_box">
+            <p class="portfolio_title">P O R T F O L I O</p>
+            <div class="portfolio_separate f-clear">
+                <span class="portfolio_l"></span>
+                <i class="portfolio_ico"></i>
+                <span class="portfolio_r"></span>
+            </div>
+        </div>
+        <p class="portfolio_info">
+            小罗伯特·唐尼（Robert Downey Jr.），1965年4月4日出生于纽约州纽约市，美国电影演员、制片人。
+            1971年，5岁的他出演电影《狗》。1987年，22岁的小罗伯特·唐尼主演了喜剧片《泡妞专家》，该影片是他主演的第一部电影。
+            1993年，小罗伯特·唐尼凭借电影《卓别林》获得第65届奥斯卡最佳男主角的提名。
+            1997年，他因吸毒被逮捕并强制戒毒。2001年，他凭借《甜心俏佳人》获得第58届美国电影电视金球奖。
+            2007年，他主演了《十二宫》。2008年，他出演了电影《钢铁侠》。
+            2010年，他凭借《大侦探福尔摩斯》获得第67届金球奖电影类音乐喜剧类最佳男主角奖。
+            2012年，他主演了《复仇者联盟》。2013年，他主演的《钢铁侠3》上映。
+            2015年，小罗伯特·唐尼收入8000万美元，居福布斯全球演员富豪榜排名第一位。
+        </p>
+    </div>
+    <div class="portfolio_btn">
+        <a href="###" class="btn" id="port_btn_1">All</a>
+        <a href="###" class="btn" id="port_btn_2">UI Design</a>
+        <a href="###" class="btn" id="port_btn_3">Web Design</a>
+        <a href="###" class="btn" id="port_btn_4">Photography</a>
+        <a href="###" class="btn" id="port_btn_5">Video</a>
+    </div>
+    <div class="portfolio_photo">
+        <div class="portfolio_photo_1">
+            <div id="img_1" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+            <div id="img_2" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+            <div id="img_3" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+
+        </div>
+        <div class="portfolio_photo_2">
+            <div id="img_4" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+            <div id="img_5" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+            <div id="img_6" class="portfolio_img">
+                <div class="photo_view"><i>Project Name</i><span>WEB DESIGN</span><a
+                        href="###">VIEW</a></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tri_overflow_5">
+        <div class="triangle_box_5"></div>
+    </div>
+</div>
+<div class="process">
+    <div class="process_content">
+        <div class="process_box">
+            <p class="process_title">P R O C E S S</p>
+            <div class="process_separate f-clear">
+                <span class="process_l"></span>
+                <i class="process_ico"></i>
+                <span class="process_r"></span>
+            </div>
+        </div>
+        <div class="process_link f-clear">
+            <a href="###" class="process_link_arrows"><i id="process_ico_1"></i><s>IDEA</s></a>
+            <i class="process_link_arrows"></i>
+            <a href="###" class="process_link_arrows"><i id="process_ico_2"></i><s>CONCEPT</s></a>
+            <i class="process_link_arrows"></i>
+            <a href="###" class="process_link_arrows"><i id="process_ico_3"></i><s>DESIGN</s></a>
+            <i class="process_link_arrows"></i>
+            <a href="###" class="process_link_arrows"><i id="process_ico_4"></i><s>DEVELOP</s></a>
+            <i class="process_link_arrows"></i>
+            <a href="###" class="process_link_arrows"><i id="process_ico_5"></i><s>TEST</s></a>
+            <i class="process_link_arrows"></i>
+            <a href="###" class="process_link_arrows"><i id="process_ico_6"></i><s>LAUNCH</s></a>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow_6">
+    <div class="triangle_box_6"></div>
+</div>
+<div class="test">
+    <div class="test_content">
+        <div class="test_box">
+            <p class="test_title">T E S T I M O N I A L</p>
+            <div class="test_separate f-clear">
+                <span class="test_l"></span>
+                <i class="test_ico"></i>
+                <span class="test_r"></span>
+            </div>
+        </div>
+        <div class="test_ctr f-clear">
+            <a class="last" href="###"><i class="switch">◇</i></a>
+            <div class="test_center">
+                <i class="test_con f-clear">
+                    <s class="test_top"></s>
+                    <s class="test_bottom">
+                        <i><b></b></i>
+                        <div class="test_face_r">
+                            <div class="test_mark_top"></div>
+                            <p class="test_face_text">However undered it may seem,we are connected,you and I.We're on
+                                the same curve,just on opposite ends.</p>
+                            <p class="test_face_name">Sam L.J.-Pulp Fiction</p>
+                            <div class="test_mark_bottom"></div>
+                        </div>
+                    </s>
+                </i>
+            </div>
+            <a class="next" href="###"><i class="switch">◇</i></a>
+            <div class="test_center_bottom">Clients</div>
+        </div>
+    </div>
+    <div class="separate_line_papa_green">
+        <div class="separate_line_green"></div>
+    </div>
+    <div class="adv">
+        <i id="ico_adv_1" class="ico_adv"></i>
+        <i id="ico_adv_2" class="ico_adv"></i>
+        <i id="ico_adv_3" class="ico_adv"></i>
+    </div>
+</div>
+<div class="tri_overflow_7">
+    <div class="triangle_box_7"></div>
+</div>
+<div class="blog">
+    <div class="blog_content">
+        <div class="blog_box">
+            <p class="blog_title">B L O G</p>
+            <div class="blog_separate f-clear">
+                <span class="blog_l"></span>
+                <i class="blog_ico"></i>
+                <span class="blog_r"></span>
+            </div>
+            <div class="blog_1">
+                <i class="blog_1_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+            <div class="blog_1 blog_space">
+                <i class="blog_2_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+            <div class="blog_1">
+                <i class="blog_3_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+            <div class="blog_1">
+                <i class="blog_4_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+            <div class="blog_1 blog_space">
+                <i class="blog_5_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+            <div class="blog_1">
+                <i class="blog_6_img"></i>
+                <i class="blog_green_tri_top"></i>
+                <i class="blog_green_tri_bottom"></i>
+                <i class="blog_month blog_month_top">5</i>
+                <i class="blog_month blog_month_bottom">May</i>
+                <i class="blog_con_top">Nature is Iethal but it doesn't hold a candle to man.</i>
+                <i class="blog_separate_line"></i>
+                <i class="blog_con_center">Your bones don't break,mine do.That's clear.Your cells react to bacteria and
+                    viruses differently than mine.You don't get sick,I do.</i>
+                <i class="blog_separate_line_bottom"></i>
+                <i class="blog_con_bottom"> 3 Comments　|　8Share</i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow_8">
+    <div class="triangle_box_8"></div>
+</div>
+<div class="contact">
+    <div class="contact_content">
+        <div class="contact_box">
+            <p class="contact_title">C O N T A C T</p>
+            <div class="contact_separate f-clear">
+                <span class="contact_l"></span>
+                <i class="contact_ico"></i>
+                <span class="contact_r"></span>
+            </div>
+        </div>
+        <div class="contact_content_center">
+            <div class="contact_con_l">
+                <i class="contact_top">Say Hi to Me</i>
+                <i class="contact_line"></i>
+                <i class="contact_center">Orchard Park,Long Bennington,Newark,Lincolnshire NG23 5DQ,United Kingdom</i>
+                <i class="contact_num">37468184</i>
+                <i class="contact_email">SH9830@outlook.com</i>
+                <i class="contact_web_add">www.sebasti.com</i>
+            </div>
+            <div class="contact_con_r">
+                <i class="contact_top">Drop Me A Line</i>
+                <i class="contact_line"></i>
+                <i class="contact_input_name">
+                    <input type="text" placeholder="Name">
+                </i>
+                <i class="contact_input_E-mail">
+                    <input type="text" placeholder="E-mail">
+                </i>
+                <i class="textarea">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </i>
+                <i class="send">
+                    <button type="submit" value="SEND">
+                        <div></div>
+                        <s id="send">　　SEND</s></button>
+                </i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tri_overflow_9">
+    <div class="triangle_box_9"></div>
+</div>
+<div class="download">
+    <div class="download_content">
+        <div class="download_box">
+            <div class="download_separate f-clear">
+                <span class="download_l"></span>
+                <i class="download_ico"></i>
+                <span class="download_r"></span>
+            </div>
+            <button>Download My Resume</button>
+        </div>
+    </div>
+</div>
+<div class="tail">
+    <i><img src="img/copyright.png" alt="">　Kong 2014</i>
+</div>
+</body>
+</html>

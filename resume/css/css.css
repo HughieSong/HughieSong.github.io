@@ -1,0 +1,605 @@
+body {
+    min-width: 300px;
+    height: 100%;
+    background: url("../images/bg1.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+/***********************音乐控件************************/
+.music {
+    width: 5rem;
+    height: 5rem;
+    float: right;
+    position: fixed;
+    right: 1rem;
+    top: 1.5rem;
+    z-index: 999;
+}
+
+.music li {
+    width: .4rem;
+    background: rgba(255, 255, 255, .8);
+    float: left;
+    position: absolute;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.music-1 {
+    height: 1.5rem;
+}
+.music-2 {
+     height: 3rem;
+ }
+.music-on1{
+    -webkit-animation: up .5s ease-in infinite;
+    -moz-animation: up .5s ease-in infinite;
+    -o-animation: up .5s ease-in infinite;
+    animation: up .5s ease-in infinite;
+}
+
+.music-on2{
+    -webkit-animation: down .5s ease-in infinite;
+    -moz-animation: down .5s ease-in infinite;
+    -o-animation: down .5s ease-in infinite;
+    animation: down .5s ease-in infinite;
+
+}
+
+.music li:nth-child(1) {
+    bottom: 2rem;
+    left: .7rem;
+}
+
+.music li:nth-child(2) {
+    bottom: 2rem;
+    left: 1.4rem;
+}
+
+.music li:nth-child(3) {
+    bottom: 2rem;
+    left: 2.2rem;
+}
+
+.music li:nth-child(4) {
+    bottom: 2rem;
+    left: 2.9rem;
+}
+
+@-webkit-keyframes up {
+    0% {
+        height: 1.5rem;
+    }
+    50% {
+        height: 3rem;
+    }
+    100% {
+        height: 1.5rem;
+    }
+}
+
+@-webkit-keyframes down {
+    0% {
+        height: 3rem;
+    }
+    50% {
+        height: 1.5rem;
+    }
+    100% {
+        height: 3rem;
+    }
+}
+
+/******************立方体******************/
+.box {
+    perspective: 1000px;
+    -webkit-animation: sCale 4s linear infinite;
+    -moz-animation: sCale 4s linear infinite;
+    -o-animation: sCale 4s linear infinite;
+    animation: sCale 4s linear infinite;
+}
+
+.container {
+    width: 102px;
+    height: 102px;
+    margin: 80px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-animation: run 10s linear infinite;
+    -moz-animation: run 10s linear infinite;
+    -o-animation: run 10s linear infinite;
+    animation: run 10s linear infinite;
+}
+
+@-webkit-keyframes sCale {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@-webkit-keyframes run {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+    50% {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(270deg);
+        -moz-transform: rotateZ(270deg);
+        -o-transform: rotateZ(270deg);
+        transform: rotateZ(270deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+.container div {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2.5rem rgba(70, 255, 252, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(70, 255, 252, 0.79);
+}
+
+.c-top {
+    transform: rotateX(90deg) translateZ(51px);
+}
+
+.c-bottom {
+    transform: rotateX(-90deg) translateZ(51px);
+}
+
+.c-left {
+    transform: rotateY(-90deg) translateZ(51px);
+}
+
+.c-right {
+    transform: rotateY(90deg) translateZ(51px);
+}
+
+.c-front {
+    transform: translateZ(51px);
+}
+
+.c-back {
+    transform: translateZ(-51px);
+}
+
+.c-front, .c-back, .c-left, .c-right, .c-top, .c-bottom {
+    background-image: -webkit-linear-gradient(
+            left,
+            rgba(70, 255, 252, 0.79) 0,
+            rgba(70, 255, 252, 0.79) 1px,
+            rgba(0, 0, 0, 0) 0),
+    -webkit-linear-gradient(
+            top,
+            rgba(70, 255, 252, 0.79) 0,
+            rgba(70, 255, 252, 0.79) 1px,
+            rgba(0, 0, 0, 0) 0);
+    -webkit-background-size: 1.1em 1.1em;
+    -moz-background-size: 1.1em 1.1em;
+    -o-background-size: 1.1em 1.1em;
+    background-size: 1.1em 1.1em;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.next img {
+    width: 3rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    margin-left: -1.5rem;
+}
+
+.next img:nth-child(1) {
+    -webkit-animation: next 1s .5s linear infinite;
+    -moz-animation: next 1s .5s linear infinite;
+    -o-animation: next 1s .5s linear infinite;
+    animation: next 1s .5s linear infinite;
+}
+
+.next img:nth-child(2) {
+    bottom: 4rem;
+    -webkit-animation: next 1s linear infinite;
+    -moz-animation: next 1s linear infinite;
+    -o-animation: next 1s linear infinite;
+    animation: next 1s linear infinite;
+}
+
+@-webkit-keyframes next {
+    0% {
+        opacity: .8;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .8;
+    }
+}
+
+/******************bg-1文字******************/
+.my {
+    width: 80%;
+    font-size: 3rem;
+    font-family: "微软雅黑";
+    line-height: 6rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.my_top {
+    width: 80%;
+    font-size: 1.8rem;
+    font-family: "verdana";
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+.my,.my_top{
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, 0.9);
+}
+
+
+/*****************第二页****************/
+.bg-in {
+    text-align: center;
+    margin-top: -.5rem;
+}
+
+.bg-in img:nth-child(1) {
+    height: 2rem;
+    margin: 0 auto;
+
+}
+
+.bg-in img:nth-child(2) {
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+    margin-top: 0rem;
+}
+.active .bg-in img:nth-child(1){
+    -webkit-animation:imgTop 1s ease-in-out;
+    -moz-animation:imgTop 1s ease-in-out;
+    -o-animation:imgTop 1s ease-in-out;
+    animation:imgTop 1s ease-in-out;
+}
+.active .bg-in img:nth-child(2){
+    -webkit-animation:imgBtm 1s ease-in-out;
+    -moz-animation:imgBtm 1s ease-in-out;
+    -o-animation:imgBtm 1s ease-in-out;
+    animation:imgBtm 1s ease-in-out;
+}
+@-webkit-keyframes imgTop {
+    0%{
+        transform: translate(-500px,0);
+        opacity: 0;
+    }
+    100%{
+        transform:  translate(0,0);
+        opacity:1;
+    }
+}
+@-webkit-keyframes imgBtm {
+    0%{
+        transform: translate(500px,0);
+        opacity: 0;
+    }
+    100%{
+        transform:  translate(0,0);
+        opacity:1;
+    }
+}
+
+.p-box {
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid deepskyblue;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+.active .p-box{
+    -webkit-animation: pBox 3s ease-in infinite;
+    -moz-animation: pBox 3s ease-in infinite;
+    -o-animation: pBox 3s ease-in infinite;
+    animation: pBox 3s ease-in infinite;
+}
+.p-box img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    margin-top: .5rem;
+}
+
+.info-box {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.active .info-box>p{
+    -webkit-animation:infoBox 3s linear;
+    -moz-animation:infoBox 1s linear;
+    -o-animation:infoBox 1s linear;
+    animation:infoBox 1s linear;
+}
+@-webkit-keyframes pBox {
+    0%{
+        transform: scale(.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.9);
+    }
+}
+@-webkit-keyframes infoBox {
+    0%{
+        transform: translate(0,200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+/*****************第三页****************/
+.skill-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-box > div {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    background-color: #00b0e0;
+    border-radius: 50%;
+    margin: 1rem 1rem 0;
+    line-height: 7rem;
+    font-size: 1rem;
+    transform-style: preserve-3d;
+}
+.active .skill-box > div{
+    -webkit-animation: skBox 20s linear infinite;
+    -moz-animation: skBox 20s linear infinite;
+    -o-animation: skBox 20s linear infinite;
+    animation: skBox 20s linear infinite;
+}
+
+@-webkit-keyframes skBox {
+    0%{
+        background: orange;
+        box-shadow: 0 0 1.5rem orange;
+    }
+    25%{
+        background: #00b0e0;
+        box-shadow: 0 0 1.5rem #00b0e0;
+    }
+    50%{
+        background: #e099a8;
+        box-shadow: 0 0 1.5rem #e099a8;
+    }
+    75%{
+        background: #00b0e0;
+        box-shadow: 0 0 1.5rem #00b0e0;
+    }
+    100%{
+        background: orange;
+        box-shadow: 0 0 1.5rem orange;
+    }
+}
+
+/*****************第四页****************/
+.expe-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1rem;
+    transform-style: preserve-3d;
+}
+.active .expe-box{
+    -webkit-animation:expeBox 1.5s ease-in;
+    -moz-animation:expeBox 1.5s ease-in;
+    -o-animation:expeBox 1.5s ease-in;
+    animation:expeBox 1.5s ease-in;
+}
+
+.expe-in {
+    margin-left: -2.3rem;
+    margin-top: .5rem;
+}
+
+.expe-text {
+    display: inline-block;
+    width: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.expe-in-l {
+    margin-left: .1rem;
+}
+
+.expe-box img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.expe-in > span {
+    font-size: 1.2rem;
+}
+
+.expe-btm img {
+    margin-left: 2.8rem;
+}
+
+.line {
+    width: 1px;
+    height: 4.5rem;
+    background: #fff;
+    margin: 0 auto;
+}
+@-webkit-keyframes expeBox {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+
+}
+
+/*****************第五页****************/
+.pro-box {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+.pro-load {
+    width: 100%;
+    height: .2rem;
+    margin: .5rem 0;
+    background-image: linear-gradient(to right,#29bced, #ff3a00);
+    background-position: 0 0;
+    /*background-size: 1rem 1rem;*/
+
+}
+.active .pro-load{
+    height: .2rem;
+    -webkit-animation: lrun 5s linear infinite;
+    -moz-animation: lrun 5s linear infinite;
+    -o-animation: lrun 5s linear infinite;
+    animation: lrun 5s linear infinite;
+}
+@-webkit-keyframes lrun {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 331px 0;
+    }
+}
+
+.pro-link a {
+    color: #29bced;
+}
+
+.pro-info {
+    border-top: 1px solid #828b9d;
+    padding-top: .5rem;
+}
+
+/*****************第六页****************/
+.attitude-box {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.attitude-box span {
+    font-size: 1.6rem;
+    color: #29bced;
+}
+
+.attitude-box p {
+    font-size: 1.2rem;
+}
+.active .attitude-box{
+    -webkit-animation:attBox 1s linear;
+    -moz-animation:attBox 1s linear;
+    -o-animation:attBox 1s linear;
+    animation:attBox 1s linear;
+
+}
+@-webkit-keyframes attBox {
+    0%{
+        transform: rotate(40deg) translate(385px, -758px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+}
+
+/*****************第七页****************/
+.contact-box {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-box img {
+    width: 15rem;
+    margin-top: 2rem;
+}
+.active .contact-box p{
+    -webkit-animation:contP 1.5s linear;
+    -moz-animation:contP 1.5s linear;
+    -o-animation:contP 1.5s linear;
+    animation:contP 1.5s linear;
+}
+.active .contact-box img {
+    -webkit-animation:cont 3s linear infinite;
+    -moz-animation:cont 3s linear infinite;
+    -o-animation:cont 3s linear infinite;
+    animation:cont 3s linear infinite;
+}
+@-webkit-keyframes contP {
+    0%{
+        transform: scale(.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes cont {
+    0%{
+        box-shadow: 0 0 2rem #fff;
+    }
+    50%{
+        box-shadow: 0 0 5rem #fff;
+    }
+    100%{
+        box-shadow: 0 0 2rem #fff;
+    }
+}
